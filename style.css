@@ -1,0 +1,18 @@
+:root { --primary: #2c3e50; --accent: #e67e22; --success: #27ae60; --danger: #c0392b; --bg: #f4f7f6; }
+body { font-family: 'Segoe UI', sans-serif; margin: 0; display: flex; background: var(--bg); }
+.sidebar { width: 250px; height: 100vh; background: var(--primary); color: white; position: fixed; padding: 20px; }
+.sidebar h2 { border-bottom: 1px solid #555; padding-bottom: 10px; }
+.sidebar a { display: block; color: #bdc3c7; padding: 12px 0; text-decoration: none; cursor: pointer; transition: 0.3s; }
+.sidebar a:hover { color: var(--accent); }
+.main { margin-left: 280px; padding: 40px; width: 100%; }
+.card { background: white; padding: 25px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 20px; border-top: 4px solid var(--accent); }
+input, select { padding: 12px; margin: 8px 0; border: 1px solid #ddd; border-radius: 5px; width: 100%; box-sizing: border-box; }
+.btn { padding: 12px 20px; border: none; border-radius: 5px; cursor: pointer; font-weight: bold; color: white; transition: 0.3s; }
+.btn-primary { background: var(--accent); }
+.btn-success { background: var(--success); }
+table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+th, td { text-align: left; padding: 12px; border-bottom: 1px solid #eee; }
+.seat-map { display: grid; grid-template-columns: repeat(4, 45px); gap: 10px; margin: 20px 0; }
+.seat { width: 45px; height: 45px; border: 1px solid #ccc; text-align: center; line-height: 45px; cursor: pointer; border-radius: 5px; }
+.seat.selected { background: var(--accent); color: white; }
+.seat.occupied { background: #ddd; cursor: not-allowed; }
